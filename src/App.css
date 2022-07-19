@@ -1,0 +1,34 @@
+/* global style */
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+/* App Style */
+.slides-app {
+    width: 600px;
+    height: 350px;
+   
+}
+/* Slideshow style */
+.container {
+    display:flex;
+    position: absolute;
+    height: 100%;
+    background-color: #ffffff;
+}
+.movieImage img{
+    width: 200px;
+}
+.movieText {
+    padding: 1em;
+    width: 500px;
+}
+
+.release {
+    margin-bottom: 0;
+}
+.runtime {
+    margin-top: 0;
+}
