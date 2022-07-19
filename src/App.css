@@ -29,7 +29,6 @@ button:active {
     display:flex;
     position: absolute;
     height: 100%;
-    background-color: #ffffff;
 }
 .movieImage img{
     width: 200px;
