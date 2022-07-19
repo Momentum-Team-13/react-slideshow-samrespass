@@ -10,7 +10,7 @@ const [movie, setMovie] = React.useState([]);
     .catch(err=>console.log(err))
     }, []);
     // UseEffect Bullshit
-    const [slide, setSlide] = useState(0);
+    let [slide, setSlide] = useState(0);
 
 return (
      movie.map((movie, index) => (
@@ -23,16 +23,21 @@ return (
         <div className="movieText">
             <h1>{movie.title}</h1>
             <h2>{movie.original_title}</h2>
-            <p>{movie.description}</p>
+            <p className="movieDescription">{movie.description}</p>
             <p className="release"><b>Released:</b> {movie.release_date}</p>
             <p className="runtime"> <b>Runtime: </b>{movie.running_time} minutes</p>
+            { slide > 0 &&
+            <button className="first" onClick={() => setSlide(slide = 0)}>First</button>
+            }
             { slide > 0 &&
             <button className="prev" onClick={() => setSlide(slide - 1)}>Previous</button>
             }
             { slide < 21 &&
             <button className="next" onClick={() => setSlide(slide + 1)}>Next</button>
             }
-            
+            { slide < 21 &&
+            <button className="last" onClick={() => setSlide(slide = 21)}>Last</button>
+            }
         </div>
         }
        

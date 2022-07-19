@@ -5,6 +5,19 @@ h1 {
 h2 {
     margin: 0;
 }
+
+button {
+    margin: .5em;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: pink;
+}
+
+button:active {
+    color: black;
+    background-color: white;
+}
 /* App Style */
 .slides-app {
     width: 600px;
@@ -24,6 +37,9 @@ h2 {
 .movieText {
     padding: 1em;
     width: 500px;
+}
+.movieDescription {
+    height: 250px;
 }
 
 .release {
