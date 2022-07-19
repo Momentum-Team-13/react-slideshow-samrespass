@@ -26,8 +26,13 @@ return (
             <p>{movie.description}</p>
             <p className="release"><b>Released:</b> {movie.release_date}</p>
             <p className="runtime"> <b>Runtime: </b>{movie.running_time} minutes</p>
-            <p>{index}</p>
+            { slide > 0 &&
+            <button className="prev" onClick={() => setSlide(slide - 1)}>Previous</button>
+            }
+            { slide < 21 &&
             <button className="next" onClick={() => setSlide(slide + 1)}>Next</button>
+            }
+            
         </div>
         }
        
