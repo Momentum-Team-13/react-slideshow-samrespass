@@ -1,6 +1,7 @@
 /* global style */
 h1 {
     margin: 0;
+    font-size: 1.5em;
 }
 h2 {
     margin: 0;
@@ -20,25 +21,26 @@ button:active {
 }
 /* App Style */
 .slides-app {
-    width: 600px;
+    width: 700px;
     height: 350px;
    
 }
 /* Slideshow style */
 .container {
     display:flex;
-    position: absolute;
+
     height: 100%;
+
 }
 .movieImage img{
-    width: 200px;
+    width: 300px;
 }
 .movieText {
     padding: 1em;
     width: 500px;
 }
 .movieDescription {
-    height: 250px;
+    height: 350px;
 }
 
 .release {
